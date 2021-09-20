@@ -35,7 +35,7 @@ async def cb_handler(client, update):
 	cb_data = update.data
 	
 	if "help" in cb_data:
-		await update.message.edit_text("Just Send URL with Format.(Audio/Video)\nExample: `https://youtube.com/playlist?list=xxxxxxxxxx audio`\n\nPowered by @fhmusics",
+		await update.message.edit_text("Just Send URL with Format.(Audio/Video) In @fhmusics\n\nExample: `https://youtube.com/playlist?list=xxxxxxxxxx audio`\n\nSend Links In The Group Specified👇👇\n\nPowered by @fhmusics",
 			reply_markup=InlineKeyboardMarkup(
 				[[
 					InlineKeyboardButton("🧰 About", callback_data=f"about"),
