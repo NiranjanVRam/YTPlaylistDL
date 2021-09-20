@@ -235,7 +235,7 @@ async def uloader(client, message):
 
     c_time = time.time()
     try:
-        await msg.edit("`Uploading.`")
+        await msg.edit("`Uploading.. Please Wait. This May Take A While..`")
     except MessageNotModified:
         pass
     if song:
@@ -301,7 +301,7 @@ def get_lst_of_files(input_directory, output_lst):
 
 async def del_old_msg_send_msg(msg, client, message):
     await msg.delete()
-    await client.send_message(message.chat.id, "`Playlist Upload Success!`")
+    await client.send_message(message.chat.id, "`Playlist Upload Success!\n\nDone By @fhmusics\n\nPowered By @fileshomeofficial`")
 
 def get_metadata(file):
     fwidth = None
@@ -323,7 +323,7 @@ async def pyro_fsub(c, message, fsub):
         if user.status == "kicked":
             await c.send_message(
                 chat_id=message.chat.id,
-                text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/harp_chat).",
+                text="Sorry, You are Banned to use me. Contact my [Support Bot](https://t.me/fhhelperbot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -331,11 +331,11 @@ async def pyro_fsub(c, message, fsub):
     except UserNotParticipant:
         await c.send_message(
             chat_id=message.chat.id,
-            text="**Please Join My Updates Channel to Use Me!**",
+            text="**Please Join My Channel to Use Me!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Join Now", url="https://t.me/harp_tech")
+                        InlineKeyboardButton("Join Now", url="https://t.me/fileshomeofficial")
                     ]
                 ]
             )
@@ -345,7 +345,7 @@ async def pyro_fsub(c, message, fsub):
         print(kk)
         await c.send_message(
             chat_id=message.chat.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/harp_chat).",
+            text="Something went Wrong. Contact my [Support Bot](https://t.me/fhhelperbot).",
             parse_mode="markdown",
             disable_web_page_preview=True)
         return False
