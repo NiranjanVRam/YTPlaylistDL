@@ -51,7 +51,7 @@ async def cb_handler(client, update):
 				]]
 			))
 	elif "back" in cb_data:
-		await update.message.edit_text(f"Hi {update.from_user.mention},If you need any help, Just click help button.\n\nProject by @Harp_Tech",
+		await update.message.edit_text(f"Hi {update.from_user.mention},If you need any help, Just click help button.\n\nPowered by @fhmusics",
 			reply_markup=InlineKeyboardMarkup(
 				[[
 					InlineKeyboardButton("🛠 Help", callback_data=f"help"),
