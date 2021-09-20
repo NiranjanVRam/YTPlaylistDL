@@ -10,12 +10,11 @@ _🎯 Follow me and star this repo for more telegram bots._
 ## 📌 Deploy to Heroku
 Click below button to deploy.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AnjanaMadu/YTPlaylistDL)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NiranjanVRam/YTPlaylistDL)
 
 ## 📌 Credits
 - [Youtube-DL](https://youtube-dl.org) for Youtube-DL python
 - [WBB](https://github.com/thehamkercat/WilliamButcherBot) for is_downloading idea
-- [Me](https://github.com/AnjanaMadu) for this Project 🤪
 
 ## 📌 License
 ```
